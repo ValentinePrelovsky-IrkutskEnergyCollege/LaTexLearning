@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage{pscyr}
+
+ \makeatletter 
+\begin{document}
+\title{Name of document}
+\author{A.B. Ivanov}
+\maketitle
+\begin{abstract}
+Annotation
+\end{abstract}
+
+\newpage
+\pagestyle{plain}
+\renewcommand{\@oddfoot}{\hfil WOW!\hfil} 
+
+\section{First level header}
+\subsection{Second level header}
+		Привет от заголовка второго уровня нашего текста. Мы изучаем профенссиональное издательство путём программ, которые были придуманы специально для этих целей.
+\subsection{Third level header}
+	Text of t3rd level.
+\newpage
+jkasjadsjkasjasjasjasjas
+\thispagestyle{plain}
+\makeatletter
+\renewcommand{\@oddhead}{\hfill  hello world! \hfill}
+\renewcommand{\@oddfoot}{{my \hfill \thepage }}
+
+\makeatother% возвращаем знаку @ командные свойства
+
+
+\newpage
+\begin {thebibliography}
+{lite}
+\bibitem{1} Сюткин Владислав - набор математических формул.
+\bibitem{2} Герберт Шилдт - полное руководство C++11
+\end {thebibliography}
+\end{document}
