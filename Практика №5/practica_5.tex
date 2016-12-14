@@ -1,0 +1,37 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[english, russian]{babel}
+\usepackage{lscape} % album orientation
+
+\author{Преловский В.А.}
+\title{Пример добавления рисунков в LaTeX}
+
+\begin{document}
+	\maketitle
+	\newpage
+	
+	\begin{picture}(200,200)
+	{
+		
+		\includegraphics[width=0.5\textwidth]{fig}
+		\centering
+		\caption{ПРИВЕТ}
+		\label{label}	
+	}
+	\end{picture}
+		
+	
+	\begin{picture}(200,200)
+	{
+		
+		\includegraphics[width=0.5\textwidth]{fig}
+		\centering
+		\caption{МИР}
+		\label{label}	
+	}
+	\end{picture}
+\end{document}
